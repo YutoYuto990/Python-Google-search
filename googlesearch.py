@@ -25,7 +25,7 @@ for rank, site in zip(range(1, pages_num), search_site_list):
         site_title = site.select('img')[0]['alt']
     site_url = site['href'].replace('/url?q=', '')
     # result
-    a=f"[{site_title}]({site_url})"
+    result=f"[{site_title}]({site_url})"
     q=a.find("&sa")
     #urldecode
-    print(unquote(f"{a[:q]})"))
+    print(unquote(f"{result[:q]})"))
