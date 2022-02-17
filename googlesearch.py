@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from urllib.parse import unquote
 # keyword to search
-search_word = input(plese).replace(" ","+").replace("　","+")
+search_word = input(please).replace(" ","+").replace("　","+")
 
 # how many content
 pages_num=4
